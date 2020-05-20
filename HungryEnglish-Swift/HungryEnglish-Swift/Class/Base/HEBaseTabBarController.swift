@@ -32,7 +32,7 @@ class HEBaseTabBarController: UITabBarController {
         ///字体颜色
         childController.tabBarItem.setTitleTextAttributes([NSAttributedString.Key.foregroundColor : tabbarTitleNormal()], for: UIControl.State.normal)
         childController.tabBarItem.setTitleTextAttributes([NSAttributedString.Key.foregroundColor : tabbarTitleSelect()], for: UIControl.State.selected)
-        let nav = UINavigationController(rootViewController: childController)
+        let nav = HEBaseNavigationController(rootViewController: childController)
         addChild(nav)
     }
 

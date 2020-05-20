@@ -14,7 +14,20 @@ class HEBaseController: UIViewController {
         super.viewDidLoad()
         self.view.backgroundColor = HERGBColor(red: 244, green: 245, blue: 248)
     }
-    
-
-
 }
+
+//extension UIViewController {
+//
+//    func mNavigationbarHeight() -> CGFloat {
+//        return (self.navigationController?.navigationBar.frame.size.height)!
+//    }
+//
+//    func mTopHeight() -> CGFloat {
+//        return (self.navigationController?.navigationBar.frame.size.height)! + kStatusBarHeight()
+//    }
+//
+//    func mTabbarHeight() -> CGFloat {
+//        return (self.tabBarController?.tabBar.bounds.size.height)!
+//    }
+//}
+

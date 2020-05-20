@@ -26,4 +26,12 @@ func tabbarTitleSelect() -> UIColor {
     return HERGBColor(red: 255, green: 184, blue: 63)
 }
 
+func navBarBgColor() -> UIColor {
+    return UIColor.white
+}
+
+func navBarTitleColor() -> UIColor {
+    return HERGBColor(red: 51, green: 51, blue: 51)
+}
+
 

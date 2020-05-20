@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2894939D247501B400CED7EE /* UtilsMacros.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2894939C247501B400CED7EE /* UtilsMacros.swift */; };
+		289493A524751A5700CED7EE /* HEHomeHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 289493A424751A5600CED7EE /* HEHomeHeaderView.xib */; };
+		289493A724751A6600CED7EE /* HEHomeHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 289493A624751A6600CED7EE /* HEHomeHeaderView.swift */; };
+		289493C424752DF300CED7EE /* ZCycleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 289493C024752DF300CED7EE /* ZCycleView.swift */; };
+		289493C524752DF300CED7EE /* ZCycleViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 289493C124752DF300CED7EE /* ZCycleViewCell.swift */; };
+		289493C624752DF300CED7EE /* ZCycleLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 289493C224752DF300CED7EE /* ZCycleLayout.swift */; };
+		289493C724752DF300CED7EE /* ZPageControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 289493C324752DF300CED7EE /* ZPageControl.swift */; };
+		289493C9247537AF00CED7EE /* UIViewController+LayoutMethods.swift in Sources */ = {isa = PBXBuildFile; fileRef = 289493C8247537AF00CED7EE /* UIViewController+LayoutMethods.swift */; };
 		2897FEBB2473C6EB00D7ED92 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2897FEBA2473C6EB00D7ED92 /* AppDelegate.swift */; };
 		2897FEBD2473C6EB00D7ED92 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2897FEBC2473C6EB00D7ED92 /* SceneDelegate.swift */; };
 		2897FEBF2473C6EB00D7ED92 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2897FEBE2473C6EB00D7ED92 /* ViewController.swift */; };
@@ -20,11 +28,20 @@
 		2897FEE72473E5DA00D7ED92 /* HEMineController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2897FEE62473E5DA00D7ED92 /* HEMineController.swift */; };
 		2897FEE92473E5E600D7ED92 /* HEFindController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2897FEE82473E5E600D7ED92 /* HEFindController.swift */; };
 		2897FEEB2473EB5C00D7ED92 /* HEBaseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2897FEEA2473EB5C00D7ED92 /* HEBaseController.swift */; };
+		2897FEED2474C5BF00D7ED92 /* HEBaseNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2897FEEC2474C5BF00D7ED92 /* HEBaseNavigationController.swift */; };
 		95A6B9956CBB914280B09ED4 /* Pods_HungryEnglish_Swift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E8EC5682BBC45FD27039E02C /* Pods_HungryEnglish_Swift.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0D32D3C41B421617BC24B0DC /* Pods-HungryEnglish-Swift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HungryEnglish-Swift.release.xcconfig"; path = "Target Support Files/Pods-HungryEnglish-Swift/Pods-HungryEnglish-Swift.release.xcconfig"; sourceTree = "<group>"; };
+		2894939C247501B400CED7EE /* UtilsMacros.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UtilsMacros.swift; sourceTree = "<group>"; };
+		289493A424751A5600CED7EE /* HEHomeHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HEHomeHeaderView.xib; sourceTree = "<group>"; };
+		289493A624751A6600CED7EE /* HEHomeHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HEHomeHeaderView.swift; sourceTree = "<group>"; };
+		289493C024752DF300CED7EE /* ZCycleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZCycleView.swift; sourceTree = "<group>"; };
+		289493C124752DF300CED7EE /* ZCycleViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZCycleViewCell.swift; sourceTree = "<group>"; };
+		289493C224752DF300CED7EE /* ZCycleLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZCycleLayout.swift; sourceTree = "<group>"; };
+		289493C324752DF300CED7EE /* ZPageControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZPageControl.swift; sourceTree = "<group>"; };
+		289493C8247537AF00CED7EE /* UIViewController+LayoutMethods.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+LayoutMethods.swift"; sourceTree = "<group>"; };
 		2897FEB72473C6EB00D7ED92 /* HungryEnglish-Swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "HungryEnglish-Swift.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2897FEBA2473C6EB00D7ED92 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2897FEBC2473C6EB00D7ED92 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -40,6 +57,7 @@
 		2897FEE62473E5DA00D7ED92 /* HEMineController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HEMineController.swift; sourceTree = "<group>"; };
 		2897FEE82473E5E600D7ED92 /* HEFindController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HEFindController.swift; sourceTree = "<group>"; };
 		2897FEEA2473EB5C00D7ED92 /* HEBaseController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HEBaseController.swift; sourceTree = "<group>"; };
+		2897FEEC2474C5BF00D7ED92 /* HEBaseNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HEBaseNavigationController.swift; sourceTree = "<group>"; };
 		E8EC5682BBC45FD27039E02C /* Pods_HungryEnglish_Swift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HungryEnglish_Swift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE5D5F331E374BBAFFF7DDEF /* Pods-HungryEnglish-Swift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HungryEnglish-Swift.debug.xcconfig"; path = "Target Support Files/Pods-HungryEnglish-Swift/Pods-HungryEnglish-Swift.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -56,6 +74,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		289493BF24752DF300CED7EE /* ZCycleView */ = {
+			isa = PBXGroup;
+			children = (
+				289493C024752DF300CED7EE /* ZCycleView.swift */,
+				289493C124752DF300CED7EE /* ZCycleViewCell.swift */,
+				289493C224752DF300CED7EE /* ZCycleLayout.swift */,
+				289493C324752DF300CED7EE /* ZPageControl.swift */,
+			);
+			path = ZCycleView;
+			sourceTree = "<group>";
+		};
 		2897FEAE2473C6EB00D7ED92 = {
 			isa = PBXGroup;
 			children = (
@@ -95,6 +124,7 @@
 			children = (
 				2897FECF2473D77100D7ED92 /* HEBaseTabBarController.swift */,
 				2897FEEA2473EB5C00D7ED92 /* HEBaseController.swift */,
+				2897FEEC2474C5BF00D7ED92 /* HEBaseNavigationController.swift */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -102,7 +132,10 @@
 		2897FED12473E0F900D7ED92 /* tools */ = {
 			isa = PBXGroup;
 			children = (
+				289493BF24752DF300CED7EE /* ZCycleView */,
 				2897FED42473E27900D7ED92 /* HEColorManager.swift */,
+				2894939C247501B400CED7EE /* UtilsMacros.swift */,
+				289493C8247537AF00CED7EE /* UIViewController+LayoutMethods.swift */,
 			);
 			path = tools;
 			sourceTree = "<group>";
@@ -132,6 +165,8 @@
 		2897FED82473E52400D7ED92 /* view */ = {
 			isa = PBXGroup;
 			children = (
+				289493A624751A6600CED7EE /* HEHomeHeaderView.swift */,
+				289493A424751A5600CED7EE /* HEHomeHeaderView.xib */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -279,6 +314,7 @@
 				2897FEC72473C6EE00D7ED92 /* LaunchScreen.storyboard in Resources */,
 				2897FEC42473C6EE00D7ED92 /* Assets.xcassets in Resources */,
 				2897FEC22473C6EB00D7ED92 /* Main.storyboard in Resources */,
+				289493A524751A5700CED7EE /* HEHomeHeaderView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -331,16 +367,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				289493C624752DF300CED7EE /* ZCycleLayout.swift in Sources */,
+				289493C724752DF300CED7EE /* ZPageControl.swift in Sources */,
 				2897FEBF2473C6EB00D7ED92 /* ViewController.swift in Sources */,
+				289493C424752DF300CED7EE /* ZCycleView.swift in Sources */,
 				2897FEBB2473C6EB00D7ED92 /* AppDelegate.swift in Sources */,
+				289493C524752DF300CED7EE /* ZCycleViewCell.swift in Sources */,
+				2894939D247501B400CED7EE /* UtilsMacros.swift in Sources */,
 				2897FEE92473E5E600D7ED92 /* HEFindController.swift in Sources */,
 				2897FEBD2473C6EB00D7ED92 /* SceneDelegate.swift in Sources */,
 				2897FEE72473E5DA00D7ED92 /* HEMineController.swift in Sources */,
+				2897FEED2474C5BF00D7ED92 /* HEBaseNavigationController.swift in Sources */,
 				2897FEE52473E5CD00D7ED92 /* HECourseController.swift in Sources */,
 				2897FEE32473E5B700D7ED92 /* HEHomeController.swift in Sources */,
 				2897FEEB2473EB5C00D7ED92 /* HEBaseController.swift in Sources */,
+				289493A724751A6600CED7EE /* HEHomeHeaderView.swift in Sources */,
 				2897FED02473D77100D7ED92 /* HEBaseTabBarController.swift in Sources */,
 				2897FED52473E27900D7ED92 /* HEColorManager.swift in Sources */,
+				289493C9247537AF00CED7EE /* UIViewController+LayoutMethods.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

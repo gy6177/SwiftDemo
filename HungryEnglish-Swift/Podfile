@@ -11,12 +11,12 @@ target 'HungryEnglish-Swift' do
 
   # Pods for HungryEnglish-Swift
 	#网络请求
-	pod 'Alamofire'
+	pod 'Alamofire','~> 5.1.0'
 	#模型转换
 	pod 'HandyJSON'
 	pod 'SwiftyJSON'
-	#图片处理	
+	#图片处理
 	pod 'Kingfisher'
-	
-
+	#约束
+  pod 'SnapKit'
 end
