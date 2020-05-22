@@ -24,6 +24,8 @@ class ZCycleViewCell: UICollectionViewCell {
     
     override init(frame: CGRect) {
         super.init(frame: frame)
+        self.layer.masksToBounds = true
+        self.layer.cornerRadius = 8.5
         addImageView()
         addTitleLabel()
     }

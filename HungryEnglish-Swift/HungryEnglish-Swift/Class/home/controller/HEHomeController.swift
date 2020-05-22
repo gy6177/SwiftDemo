@@ -24,17 +24,54 @@ class HEHomeController: HEBaseController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.addSubview(headerView)
-        headerView.snp.makeConstraints { (make) in
-            make.left.right.top.equalToSuperview()
-//            make.height.equalTo(565)
-        }
+        
+        makeTableViewUI()
+//        view.addSubview(headerView)
+//        headerView.snp.makeConstraints { (make) in
+//            make.left.right.top.equalToSuperview()
+//        }
+
         makeNavBar()
         
     }
     
+    func makeTableViewUI() -> Void {
+        view.addSubview(myTableView)
+        myTableView.snp.makeConstraints { (make) in
+            make.left.right.equalTo(self.view)
+            make.top.equalTo(self.view).offset(-kStatusBarHeight())
+            make.bottom.equalTo(self.view.snp_bottom).offset(-kBottomHeight())
+        }
+        
+        myTableView.tableHeaderView = headerView
+        headerView.snp_makeConstraints { (make) in
+            make.left.top.right.equalToSuperview()
+        }
+    }
+    
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        sizeHeaderToFit()
+    }
+    ///修改tableview的tableHeaderView的高度
+     func sizeHeaderToFit() {
+            let headerView = myTableView.tableHeaderView!
+            
+            headerView.setNeedsLayout()
+            // 立马布局子视图
+            headerView.layoutIfNeeded()
+        
+        let height = headerView.systemLayoutSizeFitting(UIView.layoutFittingCompressedSize).height
+            var frame = headerView.frame
+        frame.size.height = height
+            headerView.frame = frame
+            
+            // 重新设置tableHeaderView
+            myTableView.tableHeaderView = headerView
+        }
+    
     func makeNavBar() -> Void {
-        self.view.addSubview(navBarView)
+        view.addSubview(navBarView)
         navBarView.snp.makeConstraints { (make) in
             make.top.right.left.equalTo(self.view)
             make.height.equalTo(mTopHeight())
@@ -100,4 +137,53 @@ class HEHomeController: HEBaseController {
         headerView.topH.constant = mTopHeight()+6
         return headerView;
     }()
+    
+    lazy var myTableView: UITableView = {
+        let myTableView = UITableView()
+        myTableView.delegate = self
+        myTableView.dataSource = self
+        myTableView.backgroundColor = UIColor.clear
+        myTableView.separatorStyle = .none
+        return myTableView
+    }()
+}
+
+extension HEHomeController: UITableViewDelegate, UITableViewDataSource {
+    
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 2
+    }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 1
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = UITableViewCell(style: UITableViewCell.CellStyle.default, reuseIdentifier: "homeCell")
+        cell.textLabel?.text = "1"
+        return cell
+    }
+    
+    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        return 7.5
+    }
+
+    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        return UIView()
+    }
+}
+
+// MARK: - UIScrollViewDelegate
+extension HEHomeController {
+    
+    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        if scrollView == myTableView {
+            let point = scrollView.contentOffset;
+            if point.y > -kStatusBarHeight() {
+                navBarView.backgroundColor = HERGBColor(red: 255, green: 184, blue: 63)
+            }else{
+                navBarView.backgroundColor = UIColor.clear
+            }
+        }
+    }
 }

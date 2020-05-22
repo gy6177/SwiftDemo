@@ -8,6 +8,7 @@
 
 import UIKit
 
+
 func HERGBColor(red:CGFloat, green:CGFloat, blue:CGFloat) -> UIColor {
     
     return UIColor(red: red/255.0, green: green/255.0, blue: blue/255.0, alpha: 1)
@@ -34,4 +35,8 @@ func navBarTitleColor() -> UIColor {
     return HERGBColor(red: 51, green: 51, blue: 51)
 }
 
+func HEMainColor() -> UIColor {
+    
+    return HERGBColor(red: 244, green: 245, blue: 248)
+}
 

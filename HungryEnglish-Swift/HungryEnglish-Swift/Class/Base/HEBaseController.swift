@@ -12,7 +12,7 @@ class HEBaseController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.view.backgroundColor = HERGBColor(red: 244, green: 245, blue: 248)
+        self.view.backgroundColor = HEMainColor()
     }
 }
 

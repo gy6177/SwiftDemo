@@ -31,10 +31,10 @@ extension UIView {
     ///   - height: UIView 高度
     ///   - corners: UIRectCorner 传递枚举数组 [] 例如： [UIRectCorner.topRight, .topLeft]
     ///   - cornerRadii: CGSize 类型
-    func clickCorner(width: CGFloat, height: CGFloat, corners: UIRectCorner, cornerRadii: CGSize) {
-        let maskBezier = UIBezierPath(roundedRect: CGRect.init(x: 0, y: 0, width: width, height: height), byRoundingCorners: corners, cornerRadii: cornerRadii)
+    func clickCorner(corners: UIRectCorner, cornerRadii: CGSize) {
+        let maskBezier = UIBezierPath(roundedRect: self.bounds, byRoundingCorners: corners, cornerRadii: cornerRadii)
         let maskLayer = CAShapeLayer.init()
-        maskLayer.frame = CGRect.init(x: 0, y: 0, width: width, height: height)
+        maskLayer.frame = self.bounds
         maskLayer.path = maskBezier.cgPath
         self.layer.mask = maskLayer
     }

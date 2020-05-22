@@ -200,6 +200,8 @@ extension ZCycleView {
         collectionView.dataSource                     = self
         collectionView.scrollsToTop                   = false
         collectionView.decelerationRate               = UIScrollView.DecelerationRate(rawValue: 0.0)
+        collectionView.layer.masksToBounds = true
+        collectionView.layer.cornerRadius = 8.5
         registerCell()
         addSubview(collectionView)
     }
